@@ -21,6 +21,10 @@ public class CustomList {
         boolean removed = cities.remove(city);
         if (!removed) throw new IllegalArgumentException("City not in list");
     }
+    public int countCities() {
+        return cities.size();
+    }
+
 
     // Will be implemented later using TDD (leave blank for now)
     // public boolean hasCity(City city) { ... }
